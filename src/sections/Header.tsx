@@ -39,7 +39,7 @@ const NavItem: React.FC<NavItemProps> = ({
     hasDropdown = false,
     isActive = false,
 }) => (
-    <div className="navItem relative">
+    <div className="navItem relative ">
         <span className={isActive ? "font-bold" : ""}>{label}</span>
         {isActive && (
             <div className="absolute top-6 left-10 h-1.5 w-1.5 rounded-full bg-[#1AD598]" />
