@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Racing_Sans_One, Raleway } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/sections/Header";
+import { raleway } from "@/lib/font";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -11,19 +12,6 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
-});
-
-export const raleway = Raleway({
-    subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    style: ["normal", "italic"],
-    display: "swap",
-});
-
-export const racingSansOne = Racing_Sans_One({
-    subsets: ["latin"],
-    weight: "400",
-    display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -39,7 +27,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} ${raleway.className} antialiased`}
             >
                 <Header />
                 <div className="relative overflow-clip">
