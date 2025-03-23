@@ -10,7 +10,7 @@ const POST = {
         src: "https://s3-alpha-sig.figma.com/img/fb49/59c7/3f1f17145ea689bd38538129e6319827?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tkJcLhC4ViBGXzlxV-2ePkPNfR-Ix6f0QRNpj2cAcPDH3Gw9jlk4cL2R1Nxvkba1-gvG9mZu6xqF5mrMAz9rte45Y9rvU6k74oPWkPngAcNAG7QU9tgAE4MzlLURafh5MCmJpokHxTJMUUArH5eWwaE~fcL5leX-SvDcWbaLTczBgx0ztopfryPPURe96rsCgE8zMgNq2HGnp4fupP-iTdfWuFhfKO8wFsoGtv4bQVNRcrpI0ovX0RJOu73SGg9w11-6myzp3bddMGtsuO6jIUklOQeWBRaC~uU2bixriemITukOt-0r6w~ax4wOf2vArK7NTyFVftxV7wABkqDwhg__",
         alt: "card-blog",
         width: 505,
-        height: 475,
+        height: 500,
     },
     category: "Quản Lý Sản Xuất",
     title: "Tại sao BOM quan trọng trong quản lý sản xuất?",
@@ -42,14 +42,14 @@ const CardBlog = () => {
         "M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z";
 
     return (
-        <div className="h-[700px]">
+        <div className="h-[600px]">
             {/* Image Section */}
             <Image
                 src={POST.image.src}
                 alt={POST.image.alt}
                 width={POST.image.width}
                 height={POST.image.height}
-                className="h-[70%] w-full rounded-3xl object-cover"
+                className="h-[65%] w-full rounded-3xl object-cover"
             />
 
             {/* Content Section */}
