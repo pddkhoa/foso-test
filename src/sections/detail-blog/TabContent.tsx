@@ -135,8 +135,8 @@ const TableOfContents = () => {
     }, []);
 
     return (
-        <div className="space-y-4">
-            <ul className="space-y-2">
+        <div className="space-y-4 w-full ">
+            <ul className="space-y-2 ">
                 {tocItems.map((item) => (
                     <li key={item.id}>
                         <button
@@ -145,12 +145,12 @@ const TableOfContents = () => {
                                 e.preventDefault(); // Ngăn hành vi mặc định của thẻ <a>
                                 handleScroll(`section-${item.id}`);
                             }}
-                            className="cursor-pointer text-[18px] font-bold text-[#15AA7A] hover:underline"
+                            className="cursor-pointer text-[18px] font-bold text-[#15AA7A] hover:underline break-words text-left mr-auto"
                         >
                             {item.id}. {item.title}
                         </button>
                         {item.subItems && (
-                            <ul className="pl-6 space-y-1 mt-1">
+                            <ul className="pl-6 space-y-1 mt-1 truncate">
                                 {item.subItems.map((subItem) => (
                                     <li key={subItem.id}>
                                         <button
@@ -164,7 +164,7 @@ const TableOfContents = () => {
                                                     )}`
                                                 );
                                             }}
-                                            className="text-[18px] cursor-pointer font-medium text-foreground hover:underline"
+                                            className="text-[18px] cursor-pointer font-medium text-foreground hover:underline break-words text-left mr-auto"
                                         >
                                             {subItem.title}
                                         </button>
